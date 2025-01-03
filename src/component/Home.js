@@ -9,6 +9,7 @@ import Footer from './Footer';
 import mobilepic from "../image/mobilePic.jpg"
 import Scrollbar from './Scrollbar';
 import image2 from "../image/scrollbar1.jpg"
+import Subscription from './Subscription';
 
 
 
@@ -247,7 +248,10 @@ export default function Home() {
                         </Box>
                     </Box>
                 </Box>
-
+                <Box
+                    sx={{ backgroundColor: '#f0f0f0', }}>
+                    <Subscription />
+                </Box>
 
             </Box>
             <Footer />

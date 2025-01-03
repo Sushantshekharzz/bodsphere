@@ -15,7 +15,6 @@ export default function Footer() {
             flexWrap: 'wrap',
             backgroundColor: '#f0f0f0',
             padding: 4, // Adjusted padding for a better look
-            marginTop: 4, // Ensure spacing from the content above
         }}>
             <Box sx={{
                 display: 'flex',
