@@ -7,6 +7,8 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Footer from './Footer';
 import mobilepic from "../image/mobilePic.jpg"
+import Scrollbar from './Scrollbar';
+
 
 
 export default function Home() {
@@ -166,6 +168,8 @@ export default function Home() {
                         />
                     </Box>
                 </Box>
+                <Scrollbar/>
+
             </Box>
             <Footer />
         </>
