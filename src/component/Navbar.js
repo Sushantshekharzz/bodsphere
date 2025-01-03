@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <Box sx={{height:'20%'}}>
+    <Box sx={{height:'60px'}}>
         <Box sx={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:2 }}>
            <Box sx={{color:'yellow'}}>
             BODSPHERE
@@ -15,7 +15,6 @@ export default function Navbar() {
             <Link to="/categories" style={{ textDecoration: 'none', color: 'inherit' }}>Categories</Link>
             <Link  to="/notification" style={{ textDecoration: 'none', color: 'inherit' }}>Notification</Link>
             <Link  to="/aimusic" style={{ textDecoration: 'none', color: 'inherit' }}>Ai Music</Link>
-
            </Box>
         </Box>
     </Box>

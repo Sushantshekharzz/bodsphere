@@ -13,9 +13,6 @@ function App() {
       <Route element={<Categories/>} path="/categories" />
       <Route element={<Notification/>} path="/notification" />
       <Route element={<AiMusic/>} path="/aimusic" />
-
-
-
     </Routes>
    </Router>
   );
