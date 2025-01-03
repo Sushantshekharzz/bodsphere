@@ -6,6 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Footer from './Footer';
+import mobilepic from "../image/mobilePic.jpg"
 
 
 export default function Home() {
@@ -26,16 +27,10 @@ export default function Home() {
                         wordBreak: 'break-word',
                         width: '40%',
                         padding: 5,
-                        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-
                         color: 'white',
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
                         textAlign: 'center',
                     }}>
-                        <h1>Welcome to the Yogic World</h1>
+                        <h1 style={{ color: 'black' }}>Welcome to the Yogic World</h1>
                         <h3>Yoga Teacher Trainings, Classes, Meditation, Pranayam, Music, Philosophy & More</h3>
                         <h4>Everything under $10</h4>
                     </Box>
@@ -89,7 +84,7 @@ export default function Home() {
                     <Box style={{ fontSize: 20 }}>Join our community and transform your yoga practise today.</Box>
                 </Box>
                 <Box sx={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4, padding: 4., backgroundColor: '#f0f0f0', boxShadow: '5px 5px 15px rgba(255, 47, 47, 0.3)'
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4, padding: 4., backgroundColor: '#f0f0f0',
                 }}>
                     <Box sx={{
                         height: '100%', width: '100%', border: '2px solid black', textAlign: 'center',
@@ -147,8 +142,32 @@ export default function Home() {
                         </CardActions>
                     </Box>
                 </Box>
+                <Box sx={{
+                    display: 'flex', justifyContent: 'space-around', alignItems: 'center',
+                    wordBreak: 'break-word',
+                    backgroundColor: '#f0f0f0',
+                }}>
+                    <Box sx={{ width: "500px" }}>
+                        <Typography sx={{ fontWeight: 'bold', fontSize: 30 }}> Get Internationally Accredited by Bodsphere, from the comfort of your home</Typography>
+                        <Box sx={{ paddintTop: 10 }}>
+                            <Typography  >Join the Bodsphere community and take the first step towards joining the world's biggest community of yoga schools and Teacher that represent high quality, safe , affordable, accessible and equitable Yoga</Typography>
+                        </Box>
+                    </Box>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
+                        <img
+                            src={mobilepic}
+                            alt="Mobile Representation"
+                            style={{
+                                objectFit: 'cover',
+                                width: '80%',
+                                maxWidth: '400px',
+                                borderRadius: '10px',
+                            }}
+                        />
+                    </Box>
+                </Box>
             </Box>
-            <Footer/>
+            <Footer />
         </>
     );
 }
