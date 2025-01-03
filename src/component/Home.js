@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Footer from './Footer';
 import mobilepic from "../image/mobilePic.jpg"
 import Scrollbar from './Scrollbar';
+import image2 from "../image/scrollbar1.jpg"
 
 
 
@@ -168,7 +169,85 @@ export default function Home() {
                         />
                     </Box>
                 </Box>
-                <Scrollbar/>
+                <Scrollbar />
+                <Box sx={{
+                    display: 'flex', justifyContent: 'space-around', alignItems: 'center',
+                    wordBreak: 'break-word',
+                    backgroundColor: '#f0f0f0',
+                }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 4 }}>
+                        <img
+                            src={image2}
+                            alt="Mobile Representation"
+                            style={{
+                                objectFit: 'cover',
+                                width: '80%',
+                                maxWidth: '400px',
+                                borderRadius: '10px',
+                            }}
+                        />
+                    </Box>
+                    <Box sx={{ width: "500px" }}>
+                        <Typography sx={{ fontWeight: 'bold', fontSize: 30 }}> Yoga Like never before</Typography>
+                        <Box sx={{ paddintTop: 10 }}>
+                            <Typography  >Becoming a yoga teacher has never been so easy. You can even donwload your favourite classes so they are always available when you wantthem</Typography>
+                        </Box>
+                    </Box>
+
+
+                </Box>
+                <Box sx={{
+                    textAlign: 'center', backgroundColor: '#f0f0f0',
+                }}>
+                    <Box style={{ fontSize: 40, fontWeight: 'bold' }}>What they about bodsaphere</Box>
+                    <Box sx={{
+                        display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4, padding: 4., backgroundColor: '#f0f0f0',
+                    }}>
+                        <Box sx={{
+                            height: '100%', width: '100%', border: '2px solid black', textAlign: 'center',
+
+                        }}>                    <CardContent>
+                                <Typography gutterBottom sx={{ color: 'black', fontSize: 14, fontWeight: 'bold' }}>
+                                    Bodspher has made yoga accessible and effortable for everyone
+                                </Typography>
+                                <Typography variant="h5" component="div">
+                                </Typography>
+                                <Typography variant="body2 ">
+                                    Alejaendra martinez
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                            </CardActions>
+                        </Box>
+                        <Box sx={{ height: '100%', width: '100%', border: '2px solid black', textAlign: 'center', }}>                    <CardContent>
+                            <Typography gutterBottom sx={{ color: 'black', fontWeight: 'bold', fontSize: 14 }}>
+                                Super happy to be part of revolution
+                            </Typography>
+                            <Typography variant="h5" component="div">
+                            </Typography>
+                            <Typography variant="body2">
+                                Katrine smith
+                            </Typography>
+                        </CardContent>
+                            <CardActions>
+                            </CardActions>
+                        </Box>
+                        <Box sx={{ height: '100%', width: '100%', border: '2px solid black', textAlign: 'center', }}>                    <CardContent>
+                            <Typography gutterBottom sx={{ color: 'black', fontWeight: 'bold', fontSize: 14 }}>
+                                Bodsphere platform is a gift for this world
+                            </Typography>
+                            <Typography variant="h5" component="div">
+                            </Typography>
+                            <Typography variant="body2">
+                                DieRondize
+                            </Typography>
+                        </CardContent>
+                            <CardActions>
+                            </CardActions>
+                        </Box>
+                    </Box>
+                </Box>
+
 
             </Box>
             <Footer />
